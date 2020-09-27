@@ -40,11 +40,14 @@ class NERJuridico:
         doc = nlp2(texto_limpo)
 
         for ent in doc.ents:
-            #self.retorno.append({'cor':self.cores[self.tags.index(ent.label_)], 'palavras':ent.text, 'significado':self.df[self.df['TERMO']==ent.text.strip()]['SIGNIFICADO']})
+            print(ent.text.strip())
+            print(self.df[self.df['TERMO']==ent.text.strip()]['SIGNIFICADO'])
+            print(self.df[self.df['TERMO']==ent.text.strip()]['SIGNIFICADO'].values[0])
+            self.retorno.append({'cor':self.cores[self.tags.index(ent.label_)], 'palavras':ent.text, 'significado':self.df[self.df['TERMO']==ent.text.strip()]['SIGNIFICADO'].values[0]})
             #self.print_status(ent.text, ",", ent.label_)
-            self.retorno.append({'cor':self.cores[self.tags.index(ent.label_)], 'palavras':ent.text, 'significado':'Termo utilizado para atribuir causa'})
+            #self.retorno.append({'cor':self.cores[self.tags.index(ent.label_)], 'palavras':ent.text, 'significado':'Termo utilizado para atribuir causa'})
         print(self.retorno)
-        texto =  '' #json.dumps(self.retorno)
+        texto =  '' 
         return texto
 
     # funcao auxiliar para remover os acentos

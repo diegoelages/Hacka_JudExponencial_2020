@@ -2,8 +2,8 @@
 Repositório referente ao Hackathon do Judiciário Exponencial 2020.
 <p><b>Time 4 - Equipe:</b> </p>
 <p> * Andreza Rockenbach</p>
-<p> * Diego Lages dos Santos</p>
 <p> * Carine Zanotto Vieira </p>
+<p> * Diego Lages dos Santos</p>
 <p> * Maria Maeh</p>
 <p> * Samara Neves</p>
 
@@ -11,7 +11,31 @@ Repositório referente ao Hackathon do Judiciário Exponencial 2020.
 Uso da Inteligência Artificial para melhoria da prestação de serviços ao cidadão: soluções alinhadas a prestação jurisdicional, objetivando aprimoramento de iniciativas e serviços disponibilizados pela Justiça. Para esse caso, o escopo de dados também pode contar com os dados processuais, carta de serviços ao cidadão e dados do fale conosco abrindo o escopo para desenvolvimento de soluções que promovam como premissa o cidadão no centro, e em como melhor servi-lo por meio do uso de tecnologias e ferramentas inovadoras.
 
 ## O projeto
+Entidades juridicas (TAG's) que serão identificadas a partir dos textos jurídicos (voto dos magistrados) disponibilizados pela organização do Hackathon:
 
+* TERMO.JURIDICO
+* CARGO
+* PARTE
+* IMPOSTO
+* SENTENÇA
+* DESPACHO
+* DECISAO
+* ORGAO.PUBLICO
+* CONSTITUICAO.FEDERAL
+* ADCT
+* EMENDA.CONSTITUCIONAL
+* LEI.COMPLEMENTAR
+* TRATADOS
+* LEI.ORDINARIA
+* LEI.DELEGADA
+* MEDIDA.PROVISORIA
+* DECRETO.LEGISLATIVO
+* RESOLUCAO
+* DECRETO
+* INSTRUCAO.NORMATIVA
+* RECURSO.EXTRAORDINARIO
+ 
+RECURSO
 ### Organizacao do Projeto
 ------------
     ├── __pycache__                             <- Versão compilada dos módulos importados pelo programa
@@ -45,13 +69,10 @@ Uso da Inteligência Artificial para melhoria da prestação de serviços ao cid
     │   ├── backend                             <- Programas do lado do servidor
     │   │   └── ner_server.py                   <- 
     │   │   
-    │   ├── frontend                            <- Aplicativos para uso do usuário final
-    │   │   └──                                 <-   
-    │   │
     │   └── classes                             <- Classes utilizadas
-    │       ├── __pycache__                     <- Versão compilada dos módulos importados pelo programa
-    │       └── nerjuridico.py                  <- Classe que realiza a marcação do texto jurídico   
-    │    
+    │       ├── __pycache__                     <- Versão compilada dos módulos importados pelo programa
+    │       └── nerjuridico.py                  <- Classe que realiza a marcação do texto jurídico      
+    │     
     └── README.md                               <- Arquivo com informações para os desenvolvedores que vão utilizar este projeto.
   
     
@@ -62,5 +83,10 @@ Uso da Inteligência Artificial para melhoria da prestação de serviços ao cid
 - [ ] 
 
 ### Instalação das bibliotecas
+#### Lib beautifulsoup4
+pip install beautifulsoup4
+
+#### Lib Spacy
+pip install -U spacy
 
 ### Execução do projeto
