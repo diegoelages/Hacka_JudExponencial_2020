@@ -38,7 +38,7 @@ Uso da Inteligência Artificial para melhoria da prestação de serviços ao cid
     │   └── tokenizar                           <- Arquivo para tokenizar as entidades jurídicas
     │    
     ├── notebooks                               <- Jupyter notebooks. 
-    │   ├── leitor_fluxo.ipynb                  <- Notebook que explora as tecnologias para gerar a solução. 
+    │   ├── 01_EDA_JudExponencial2020.ipynb     <- Notebook referente a análise exploratória dos dados. 
     │   └── 02_Modelo_NER_Juridi...2020.ipynb   <- Notebook que explora a criacao de metricas paras as redes.
     │
     ├── src                                     <- Código fonte utilizado neste projeto.
